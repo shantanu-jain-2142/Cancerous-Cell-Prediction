@@ -38,7 +38,7 @@ to the same region may not be aligned.
 - Hence, alignment is required to ensure that patches corresponding to the same region
 potray similar information for the model to take advantage of.
 
-### Gray region removal
+#### Gray region removal
 - I observed that major portion of the biopsy images had gray background around
 the tissue cells, which do not contribute to the actual training.
 - Hence it was important to remove patches which majority gray background so as
@@ -77,4 +77,3 @@ to improve accuracy, as well as reducing training overhead.
 - But InceptionV3 performed better, since it was able to achieve the same level of predictability, with only 30065 patches,
  as compared to 146570 patches for the custom model.
 - Hence, even though the performance is similar, InceptionV3 outperforms the custom model in terms of data complexity.
-
